@@ -1,19 +1,29 @@
 # Showdown Team Picker Extension
 
-A simple Chrome extension to pick a random team for your current tier on Pokémon Showdown.
+A custom Chrome extension that adds a **"🎲 Randomize Team"** button directly into the Pokémon Showdown interface. This tool helps you quickly swap between teams of the same tier without manually opening the team selection menu.
 
-### How to Install
-1. Download this repository as a ZIP file and extract it to a folder.
-2. Open Chrome and navigate to `chrome://extensions/`.
-3. Enable **Developer mode** in the top right corner.
-4. Click **Load unpacked** and select the folder where you extracted the files.
-5. Pin the extension to your toolbar.
+### **Features**
+- **Native Integration:** Injects a button directly into the Main Menu and Challenge/Friendly windows.
+- **Smart Filtering:** Automatically detects your current Tier (e.g., Gen 6 OU, Gen 8 Doubles OU) and only picks from matching teams.
+- **Universal Support:** Works on the home screen, challenge dialogs, and friendly match requests.
+- **Lightweight & Private:** Runs entirely in the browser's "Main World" to access local team data without external tracking.
 
-### How to Use
-1. Go to [Pokémon Showdown](https://play.pokemonshowdown.com).
-2. Ensure you are on the home screen where you can see the "Format" and "Team" buttons.
-3. Select your desired tier (e.g., Gen 9 OU).
-4. Click the extension icon and hit **PICK RANDOM TEAM**.
+### **How to Install**
+1. **Download:** Click the green **Code** button and select **Download ZIP**.
+2. **Extract:** Unzip the folder to a location on your computer.
+3. **Developer Mode:** Open Google Chrome and navigate to `chrome://extensions/`.
+4. **Load Unpacked:** - Enable the **Developer mode** toggle in the top-right corner.
+   - Click the **Load unpacked** button.
+   - Select the folder containing the extension files.
+5. **Verify:** Open [Pokémon Showdown](https://play.pokemonshowdown.com). You should see the extension icon in your toolbar and a "Randomize Team" button under your team selector.
 
-### Privacy
-This extension runs entirely locally in your browser. It reads your teams from your browser's local storage to filter them by tier and performs a click action to select them. No data is collected or sent anywhere.
+### **Usage**
+- **Main Menu:** Select a format and click **Randomize Team** to swap between all teams you have built for that tier.
+- **Challenges:** When challenging a friend or accepting a request, use the button to pick a random legal team for the agreed-upon format.
+
+### **About**
+Created by **Tricknology**.  
+[View Smogon Profile](https://www.smogon.com/forums/members/trickery-and-deception.583025/)
+
+### **Privacy**
+This extension does not collect, store, or transmit any user data. It functions by reading the `showdown_teams` key in your browser's LocalStorage and interacting with the page's internal Room objects.

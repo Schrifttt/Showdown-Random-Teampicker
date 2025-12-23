@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Showdown Team Picker",
+  "version": "1.0",
+  "description": "Picks a random team for a specific tier.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://play.pokemonshowdown.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
